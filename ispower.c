@@ -51,10 +51,6 @@ _Bool isperfectcube(uint64_t x, uint64_t *icbrtx) {
     return true;
   }
   if (x < 8) return false;
-  if (x == 18446724184312856125UL) {
-    if (icbrtx != NULL) *icbrtx = 2642245;
-    return true;
-  }
   y = x;
   i = 0;
   while ((y >> i) >= 8) i+=3;
