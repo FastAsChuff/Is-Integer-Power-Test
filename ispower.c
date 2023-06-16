@@ -40,7 +40,8 @@ _Bool isperfectsquare(const uint64_t x, uint64_t *isqrtx) {
 _Bool isperfectcube(uint64_t x, uint64_t *icbrtx) {
   const uint8_t guess[8] = {1, 1, 1, 1, 1, 2, 2, 2};
   uint32_t i;
-  uint64_t y, ai;
+  uint64_t y;
+  __int128 ai;
   if (x == 0) {
     if (icbrtx != NULL) *icbrtx = 0;
     return true;
